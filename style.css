@@ -1,0 +1,44 @@
+@import url('https://fonts.cdnfonts.com/css/pokemon-solid');
+
+body {
+    background-image: url(backgroundImage2.webp);
+    background-size:cover;
+    
+}
+h1 {
+    text-align: center;
+    font-family: 'Pokemon Solid', sans-serif;
+    color: #ffcb05;
+    text-shadow: 3px 3px 0 #3b4cca, 6px 6px 0 #2a75bb;
+    font-size: 4rem;
+    letter-spacing: 2px;
+    margin-top: 1px;
+
+     text-shadow:
+        -4px -4px 0 #3b4cca,
+         4px -4px 0 #3b4cca,
+        -4px  4px 0 #3b4cca,
+         4px  4px 0 #3b4cca,
+         0px  0px 15px #2a75bb;
+    transform: skew(-5deg);
+}
+.Navbar {
+    background-color: #3b4cca;
+    width: 150px;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    right: 0;
+    overflow: hidden; 
+    padding-top: 20px;
+   
+}
+
+.Navbar a {
+    float: left;
+    color:#ffcb05;
+    text-align: left;
+    font-family: 'Courier New', Courier, monospace;
+    padding: 14px 16px;
+    font-size: 17px;
+}
