@@ -31,3 +31,21 @@ body {
     background-image: url(AccountCreateBackgroundImage.WEBP);
     background-size: cover;
 }
+
+#usernameLabel {
+     font-family: 'Pokemon Solid', sans-serif;
+    color: #ffcb05;
+    ;
+}
+#passwordLabel{
+     font-family: 'Pokemon Solid', sans-serif;
+    color: #ffcb05;
+    text-align: left;
+}
+
+#submit{
+    padding: 5px 20px;
+    text-align: center;
+    display:flex;
+    margin: 4px 2px;
+}
