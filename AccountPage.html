@@ -1,21 +1,27 @@
 <!DOCTYPE html>
 <html>
 <head>
+    <meta charset="UTF-8">
     <title>Create Account</title>
+    <link rel="icon" type="image/x-icon" href="pokeball.png">
     <link rel="stylesheet" href="AccountCreateStyle.css">
-    <script src="accountScript.js"></script>
+    <script src="accountScript.js" defer></script>
 </head>
 <body>
-    <div class="box"
+    <div class="box">
 
     <form id="signupForm">
         <h1>Create an Account</h1>
         <label id="usernameLabel">Username</label>
         <input type="text" id="username" placeholder="Username" required>
         <br>
-        <label id="passwordLabel">Password</label>
-        <input type="text" id="password" placeholder="Password" required>
+        <br>
+        <label id="passwordLabel">Password </label>
+        <input type="password" id="password" placeholder="Password" required>
+        <br>
+        <br>
         <button id="submit" type ="submit">Sign up</button>
+        <a id="backHome" href="index.html">Back to Homepage</a>
     </form>
 </div>
 </body>

@@ -32,20 +32,33 @@ body {
     background-size: cover;
 }
 
-#usernameLabel {
-     font-family: 'Pokemon Solid', sans-serif;
-    color: #ffcb05;
-    ;
-}
-#passwordLabel{
-     font-family: 'Pokemon Solid', sans-serif;
+#usernameLabel,
+#passwordLabel {
+    display: inline-block;
+    font-family: 'Pokemon Solid', sans-serif;
     color: #ffcb05;
     text-align: left;
+    font-size: larger;
+    width: 90px;
 }
+
 
 #submit{
     padding: 5px 20px;
     text-align: center;
     display:flex;
     margin: 4px 2px;
+}
+
+#backHome {
+    display: inline-block;
+    margin-top: 140px;
+    margin-left: 90px;
+    color: #ffcb05;
+    font-family: 'Pokemon Solid', sans-serif;
+    background-color: #3b4cca;
+    padding: 8px 14px;
+    border: 2px solid #ffcb05;
+    border-radius: 8px;
+    transition: 0.2s;
 }

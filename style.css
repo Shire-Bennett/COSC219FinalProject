@@ -47,20 +47,24 @@ h1 {
   font-size: 17px;
 
 }
+
 .Packs {
-    width: 1000px;
-    height: 200px;
-    border: 2px solid #000000;
+    width: 1040px;
+    height: 100px;
+    border: 15px solid #3b4cca;
     background-color: rgba(217, 193, 36, 0.87);
+    border-radius: 12px;
     display: flex;
     align-items: center;
     justify-content: center;
     margin: 5px auto;
+    font-size: 22px;
+    font-family: "Comic Sans MS", "Trebuchet MS", "Arial Rounded MT Bold", Arial, sans-serif;
 }
 .Pokedex {
   width: 1000px;
   min-height: 250px;
-  border: 2px solid #000000;
+  border: 15px solid #3b4cca;
   background-color: rgba(217, 193, 36, 0.87);
   margin: 20px auto;
   border-radius: 12px;
