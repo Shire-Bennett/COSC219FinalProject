@@ -1,4 +1,43 @@
 body {
-    background-image: url(squirtleBackground.webp);
+    background-image: url(buyPackBackground.png);
     background-size: cover;
+}
+
+.pack-container {
+    display: flex;
+    width: 1000px;
+    height: 500px;
+    border: 10px solid black;
+    padding: 25px;
+    position: absolute;
+    background-color: rgba(255, 255, 255, 0.87);
+    left: 400px;
+    top: 100px;
+    box-sizing: border-box;
+}
+
+.purchase-window {
+    width:290px;
+    height: 500px;
+    padding: 10px;
+    border: 10px solid black;
+    background-color: rgb(255, 255, 255);
+    position: absolute;
+    left: 50px;
+    top: 100px;
+    box-sizing: border-box;
+    text-align: center;
+    font-size: 25px;
+}
+
+.packTrio {
+    width: 180px;
+    height: auto;
+    display: block;
+    margin: 10px auto;
+}
+
+#packPrice {
+    color: green;
+    margin-top: 0;
 }
