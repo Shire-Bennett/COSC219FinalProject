@@ -147,3 +147,25 @@ body {
     background-size: cover;
     border-radius: 8px;
 }
+.home-btn-container {
+    margin-top: 25px;
+    text-align: left;
+}
+
+.home-btn {
+    display: inline-block;
+    padding: 8px 14px;
+    background-color: #ff0000;
+    color: white;
+    text-decoration: none;
+    border-radius: 10px;
+    font-weight: bold;
+    font-family: sans-serif;
+    box-shadow: 0 0 6px rgba(0,0,0,0.4);
+    transition: 0.15s ease;
+}
+
+.home-btn:hover {
+    background-color: #cc0000;
+    transform: scale(1.07);
+}
