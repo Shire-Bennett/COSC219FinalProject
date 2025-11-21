@@ -6,13 +6,13 @@ html, body {
 .box {
     position: absolute;
     width: 350px;
-    min-height: 650px; /* auto fits both forms */
+    min-height: 650px;
     border: 2px solid #000;
     background-color:#3b4cca;
     padding: 10px 10px 20px;
     color: #ffcb05;
     left: 40%;
-    top: 20px; /* not glued to the top */
+    top: 20px;
 }
 
 h1 {
