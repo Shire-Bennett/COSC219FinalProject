@@ -1,24 +1,28 @@
+html, body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
 .box {
     position: absolute;
     width: 350px;
-    height: 500px;
+    min-height: 650px; /* auto fits both forms */
     border: 2px solid #000;
     background-color:#3b4cca;
-    padding: 10px;
-    color: #3b4cca;
+    padding: 10px 10px 20px;
+    color: #ffcb05;
     left: 40%;
+    top: 20px; /* not glued to the top */
 }
 
 h1 {
-   text-align: center;
+    text-align: center;
     font-family: 'Pokemon Solid', sans-serif;
     color: #ffcb05;
-    text-shadow: 3px 3px 0 #3b4cca, 6px 6px 0 #2a75bb;
-    font-size: 4rem;
+    font-size: 3rem;
     letter-spacing: 2px;
-    margin-top: 1px;
-
-     text-shadow:
+    margin: 10px 0 5px 0;
+    text-shadow:
         -4px -4px 0 #3b4cca,
          4px -4px 0 #3b4cca,
         -4px  4px 0 #3b4cca,
@@ -30,30 +34,55 @@ h1 {
 body {
     background-image: url(AccountCreateBackgroundImage.WEBP);
     background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    min-height: 100vh;
 }
 
-#usernameLabel,
-#passwordLabel {
-    display: inline-block;
+.box-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.form-section {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.labelStyle {
     font-family: 'Pokemon Solid', sans-serif;
     color: #ffcb05;
-    text-align: left;
-    font-size: larger;
-    width: 90px;
+    font-size: 18px;
+    margin-top: 5px;
+    margin-bottom: 4px;
+    text-align: center;
 }
 
+.inputStyle {
+    width: 80%;
+    padding: 8px;
+    margin-bottom: 12px;
+    border-radius: 4px;
+    border: none;
+    font-size: 16px;
+}
 
-#submit{
-    padding: 5px 20px;
-    text-align: center;
-    display:flex;
-    margin: 4px 2px;
+.btnStyle {
+    width: 50%;
+    padding: 8px;
+    margin-top: 6px;
+    font-size: 16px;
+    cursor: pointer;
 }
 
 #backHome {
-    display: inline-block;
-    margin-top: 140px;
-    margin-left: 90px;
+    display: block;
+    text-align: center;
+    margin: 10px auto 0 auto;
     color: #ffcb05;
     font-family: 'Pokemon Solid', sans-serif;
     background-color: #3b4cca;
