@@ -15,9 +15,11 @@
 <div class="main">
   <h1>PokeWorld</h1>
 </div>
-<div class = "Packs">
-<p>Welcome to PokeWorld! Create an account and open packs to collect all 151 original pokemon!</p>
+<div class="Packs">
+  <p id="welcomeMsg">Welcome to PokeWorld! Create an account and open packs to collect all 151 original pokemon!</p>
+  <a id="collectionLink" href="collection.html" style="display:none;">Go to your collection</a>
 </div>
+
 <div class = "Pokedex">
   <h2>Pokedex</h2>
   <input type="text" id="searchBar" placeholder = "Search Pokémon"/>
@@ -26,5 +28,7 @@
 </div>
 
 <script src="pokedex.js"></script>
+<script type="module" src="firebaseInit.js"></script>
+<script type="module" src="index.js"></script>
 </body>
 </html>

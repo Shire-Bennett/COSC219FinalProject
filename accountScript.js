@@ -29,7 +29,7 @@ document.getElementById("loginForm").addEventListener("submit", async (e) => {
 
     try {
         await firebase.auth().signInWithEmailAndPassword(email, password);
-        alert("Logged in! 🔥");
+        alert("Logged in!");
         window.location.href = "index.html";
     } catch (error) {
         alert(error.message);

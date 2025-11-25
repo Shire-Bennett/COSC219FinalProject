@@ -50,7 +50,8 @@ h1 {
 
 .Packs {
     width: 1040px;
-    height: 100px;
+    height: auto;
+    padding: 16px;
     border: 15px solid #3b4cca;
     background-color: rgba(217, 193, 36, 0.87);
     border-radius: 12px;
