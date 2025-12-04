@@ -12,7 +12,7 @@ onAuthStateChanged(auth, (user) => {
         collectionLink.style.display = "block";
         logoutBtn.style.display = "block";
     } else {
-        welcomeMsg.textContent = "Welcome to PokeWorld! Create an account and open packs to collect all 151 Pokémon!";
+        welcomeMsg.textContent = "Welcome to PokeWorld! Create an account and open packs to collect all 151 original Pokémon!";
         collectionLink.style.display = "none";
         logoutBtn.style.display = "none";
     }
