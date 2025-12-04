@@ -13,7 +13,7 @@ document.getElementById("signupForm").addEventListener("submit", async (e) => {
 
     try {
         await firebase.auth().createUserWithEmailAndPassword(email, password);
-        alert("Account created! 🎉");
+        alert("Account created!");
         window.location.href = "index.html";
     } catch (error) {
         alert(error.message);
