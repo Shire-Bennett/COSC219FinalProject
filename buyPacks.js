@@ -1,10 +1,11 @@
+// fetch function to read the JSON file and return all the card images
 async function getBaseSetCards() {
     const response = await fetch("baseSet.json");
     const json = await response.json();
     return json.data;
 }
 
-
+// 
 function createPackElement() {
     const pack = document.createElement("div");
     pack.classList.add("pack");
@@ -17,6 +18,9 @@ function createPackElement() {
     return pack;
 }
 
+/* selects the container and clears it so its empty for the pack
+* 
+*/
 async function loadPacksIntoContainer() {
     const container = document.querySelector(".pack-container");
     container.innerHTML = "";
@@ -56,12 +60,32 @@ document.getElementById("buyBtn").addEventListener("click", () => {
 
 
 function generateRandomCards(cards) {
+
+    // separate nonholo from holo cards
+    const holoCards = cards.filter(card => card.number <= 16);
+    const normalCards = cards.filter(card => card.number > 16 && card.number < 96);
+    const energyCards = cards.filter(card => card.number > 95);
+
     const selected =[];
 
-    for (let i = 0; i < 11; i++) {
-        const randomIndex = Math.floor(Math.random() * cards.length);
-        selected.push(cards[randomIndex]);
+    
+
+    // final card pick 1 holo
+    const holoIndex = Math.floor(Math.random() * holoCards.length);
+    selected.push(holoCards[holoIndex]);
+
+    // pick 2 energies at random and have them the 2 cards before the holo
+    for (let i = 0; i < 2; i++) {
+    const energyIndex = Math.floor(Math.random() * energyCards.length);
+    selected.push(energyCards[energyIndex]);
     }
+
+    // loop through and pick 8 nonholo cards
+    for (let i = 0; i < 8; i++) {
+        const randomIndex = Math.floor(Math.random() * normalCards.length);
+        selected.push(normalCards[randomIndex]);
+    }
+
     return selected;
 }
 
